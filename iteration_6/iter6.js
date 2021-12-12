@@ -14,15 +14,15 @@ const duplicates = [
   "pasta",
   "soda",
 ];
-function removeDuplicates(duplicateElements) {
-  let removed = [];
-  for (let i = 0; i < duplicateElements.length; i++) {
-    if (removed.includes(duplicateElements[i])) {
-      removed.join(duplicateElements[i]);
+function removeDuplicates(elements) {
+  let unique = [];
+  for (let i = 0; i < elements.length; i++) {
+    if (unique.includes(elements[i])) {
+      unique.join(elements[i]);
     } else {
-      removed.push(duplicateElements[i]);
+      unique.push(elements[i]);
     }
   }
-  return removed;
+  return unique;
 }
 console.log(removeDuplicates(duplicates));
