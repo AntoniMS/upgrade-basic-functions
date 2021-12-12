@@ -18,7 +18,7 @@ function removeDuplicates(elements) {
   let unique = [];
   for (let i = 0; i < elements.length; i++) {
     if (unique.includes(elements[i])) {
-      unique.join(elements[i]);
+      unique[i];
     } else {
       unique.push(elements[i]);
     }
